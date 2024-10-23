@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal PIN Code API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Postal PIN Code Lookup</h1>
+        
+        <!-- Section for Searching by PIN Code -->
+        <div class="search-section">
+            <h2>Search by Postal PIN Code</h2>
+            <input type="text" id="pincodeInput" placeholder="Enter Postal PIN Code" />
+            <button onclick="searchByPincode()">Search</button>
+        </div>
+        
+        <!-- Section for Searching by Post Office Branch Name -->
+        <div class="search-section">
+            <h2>Search by Post Office Branch Name</h2>
+            <input type="text" id="branchNameInput" placeholder="Enter Branch Name" />
+            <button onclick="searchByBranchName()">Search</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="results-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

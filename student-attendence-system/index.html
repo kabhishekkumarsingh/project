@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Attendance System</h1>
+
+        <!-- Form to add a new student -->
+        <h2>Add Student</h2>
+        <form id="studentForm">
+            <input type="number" id="studentId" placeholder="Student ID" required>
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentRoll" placeholder="Roll Number" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Table to display student list -->
+        <h2>Student List</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Form to mark attendance -->
+        <h2>Mark Attendance</h2>
+        <form id="attendanceForm">
+            <input type="number" id="attendStudentId" placeholder="Student ID" required>
+            <input type="date" id="attendanceDate" required>
+            <select id="attendanceStatus" required>
+                <option value="" disabled selected>Select Status</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Mark Attendance</button>
+        </form>
+
+        <!-- Table to display attendance records -->
+        <h2>Attendance Records</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

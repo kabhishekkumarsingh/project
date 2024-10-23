@@ -1,0 +1,9 @@
+#container{
+    border: 2px solid gray;
+    width: 300px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+color: blueviolet;
+}
